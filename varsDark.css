@@ -1,0 +1,68 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --kd-color-main-palette-primary: var(--kd-color-palette-lavender-70);
+  --kd-color-main-palette-secondary: var(--kd-color-palette-spruce-60-secondary);
+  --kd-color-main-palette-tertiary: var(--kd-color-palette-spring-green-20-tertiary);
+  --kd-color-main-palette-accent: var(--kd-color-palette-warm-red-50-accent);
+  --kd-color-buttons-primary-button: var(--kd-color-palette-lavender-80-primary);
+  --kd-color-buttons-secondary-button: var(--kd-color-palette-lavender-90);
+  --kd-color-buttons-tertiary-button: var(--kd-color-palette-lavender-105);
+  --kd-color-buttons-button-dark-label: var(--kd-color-palette-dark-stone-20);
+  --kd-color-buttons-button-light-label: var(--kd-color-palette-dark-stone-20);
+  --kd-color-containers-container-bg: var(--kd-color-palette-light-opacity-3);
+  --kd-color-containers-container-child-bg: var(--kd-color-palette-light-opacity-3);
+  --kd-color-containers-interactive-container-active: var(--kd-color-palette-light-opacity-5);
+  --kd-color-containers-interactive-container-inactive: var(--kd-color-palette-light-opacity-3);
+  --kd-color-containers-utility-container: var(--kd-color-palette-lavender-105);
+  --kd-color-containers-interactive-flat-container: var(--kd-color-palette-lavender-107);
+  --kd-color-containers-container-footer: var(--kd-color-palette-lavender-105);
+  --kd-color-gradients-shadows-interactive-gradient-start: var(--kd-color-palette-lavender-107);
+  --kd-color-gradients-shadows-interactive-gradient-end: var(--kd-color-palette-lavender-100);
+  --kd-color-gradients-shadows-container-dropshadow-1: var(--kd-color-palette-dark-opacity-10);
+  --kd-color-gradients-shadows-container-dropshadow-2: var(--kd-color-palette-dark-opacity-10);
+  --kd-color-navigation-nav-bg: var(--kd-color-palette-lavender-110);
+  --kd-color-navigation-footer-bg: var(--kd-color-palette-lavender-110);
+  --kd-color-navigation-local-nav-bg: var(--kd-color-palette-lavender-105);
+  --kd-color-navigation-switcher-icon: var(--kd-color-palette-lavender-60);
+  --kd-color-page-background: var(--kd-color-palette-cool-gray-93);
+  --kd-color-page-page-bg: var(--kd-color-palette-lavender-107);
+  --kd-color-page-logo-bridge-txt: var(--kd-color-palette-dark-stone-10);
+  --kd-color-page-overlay: var(--kd-color-palette-dark-opacity-85);
+  --kd-color-states-static: var(--kd-color-palette-cool-gray-5);
+  --kd-color-states-static-solid-label: var(--kd-color-palette-cool-gray-5);
+  --kd-color-states-disabled: var(--kd-color-palette-dark-stone-80-neutral-3);
+  --kd-color-states-disabled-label: var(--kd-color-palette-warm-gray-50-base);
+  --kd-color-table-table-header: var(--kd-color-palette-lavender-105);
+  --kd-color-table-table-row: var(--kd-color-palette-light-opacity-3);
+  --kd-color-table-table-alt-row: var(--kd-color-palette-light-opacity-5);
+  --kd-color-table-table-row-active: var(--kd-color-palette-lavender-100);
+  --kd-color-table-table-row-active-nested: var(--kd-color-palette-lavender-90);
+  --kd-color-table-table-footer: var(--kd-color-palette-lavender-105);
+  --kd-color-text-copy: var(--kd-color-palette-light-opacity-86);
+  --kd-color-text-text-light: var(--kd-color-palette-light-opacity-86);
+  --kd-color-text-text-medium: var(--kd-color-palette-dark-stone-20);
+  --kd-color-text-text-dark: var(--kd-color-palette-cool-gray-90);
+  --kd-color-text-text-link: var(--kd-color-palette-lavender-40);
+  --kd-color-text-text-link-active: var(--kd-color-palette-lavender-20);
+  --kd-color-titles-primary-title: var(--kd-color-palette-spruce-30);
+  --kd-color-titles-secondary-title: var(--kd-color-palette-spruce-20);
+  --kd-color-titles-tertiary-title: var(--kd-color-palette-spruce-30);
+  --kd-color-utility-border: var(--kd-color-palette-light-opacity-5);
+  --kd-color-utility-icon: var(--kd-color-palette-cool-gray-5);
+  --kd-color-utility-search-bg: var(--kd-color-palette-lavender-105);
+  --kd-color-utility-interactive-graphic: var(--kd-color-palette-cool-gray-80);
+  --kd-color-utility-interactive-graphic-alt: var(--kd-color-palette-cool-gray-60-neutral-1);
+  --kd-color-utility-neutral-tag: var(--kd-color-palette-cool-gray-85);
+  --kd-color-forms-label-primary: var(--kd-color-palette-dark-stone-20);
+  --kd-color-forms-label-secondary: var(--kd-color-palette-dark-stone-30);
+  --kd-color-forms-input-field-background: var(--kd-color-palette-dark-opacity-30);
+  --kd-color-forms-input-field-border: var(--kd-color-palette-cool-gray-70);
+  --kd-color-forms-input-field-text: var(--kd-color-palette-dark-stone-20);
+  --kd-color-card-card-background: var(--kd-color-palette-light-opacity-3);
+  --kd-color-card-card-border-color-clickable: var(--kd-color-palette-lavender-30);
+  --kd-color-card-card-border-color-default: var(--kd-color-palette-light-opacity-5);
+  --kd-color-card-card-border-color-hover: var(--kd-color-palette-light-opacity-10);
+}

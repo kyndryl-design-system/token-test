@@ -1,81 +1,103 @@
-import { register } from '@tokens-studio/sd-transforms';
+import { register, permutateThemes } from '@tokens-studio/sd-transforms';
 import StyleDictionary from 'style-dictionary';
+import { promises } from 'fs';
 
-// will register them on StyleDictionary object
-// that is installed as a dependency of this package.
-register(StyleDictionary, {
-  excludeParentKeys: true,
+register(StyleDictionary);
+
+StyleDictionary.registerTransform({
+  name: 'addTypePrefix',
+  type: 'name',
+  transform: function (token) {
+    return token.name.split('kd-').join(`kd-${token.$type}-`);
+  },
 });
 
-// light/default mode
-new StyleDictionary({
-  // make sure to have source match your token files!
-  // be careful about accidentally matching your package.json or similar files that are not tokens
-  source: ['tokens.json'],
-  preprocessors: ['tokens-studio'], // <-- since 0.16.0 this must be explicit
-  platforms: {
-    css: {
-      transformGroup: 'tokens-studio', // <-- apply the tokens-studio transformGroup to apply all transforms
-      transforms: ['name/kebab'], // <-- add a token name transform for generating token names, default is camel
-      prefix: 'kd',
-      buildPath: '',
-      files: [
-        {
-          destination: 'variables.css',
-          format: 'css/variables',
-          options: {
-            // this will keep token references intact so that we don't need
-            // to generate *all* color resources for dark mode, only
-            // the specific ones that change
-            outputReferences: true,
-          },
-        },
-      ],
-    },
-    js: {
-      transformGroup: 'tokens-studio',
-      buildPath: 'build/js/',
-      files: [
-        {
-          destination: 'variables.js',
-          format: 'javascript/es6',
-          options: {
-            outputReferences: true,
-          },
-        },
-      ],
-    },
+StyleDictionary.registerTransform({
+  name: 'addPalettePrefix',
+  type: 'name',
+  filter: function (token) {
+    return token.filePath.startsWith('tokens/Color Palette');
   },
-}).buildAllPlatforms();
+  transform: function (token) {
+    return token.name.split('kd-color-').join('kd-color-palette-');
+  },
+});
 
-// dark mode
-// new StyleDictionary({
-//   // make sure to have source match your token files!
-//   // be careful about accidentally matching your package.json or similar files that are not tokens
-//   source: ['tokens.json'],
-//   preprocessors: ['tokens-studio'], // <-- since 0.16.0 this must be explicit
-//   platforms: {
-//     css: {
-//       transformGroup: `css`,
-//       buildPath: '',
-//       files: [
-//         {
-//           destination: `variables-dark.css`,
-//           format: `css/variables`,
-//           // only outputting the tokens from files with '.dark' in the filepath
-//           filter: (token) => token.filePath.indexOf(`.dark`) > -1,
-//           options: {
-//             // this will keep token references intact so that we don't need
-//             // to generate *all* color resources for dark mode, only
-//             // the specific ones that change
-//             outputReferences: true,
-//           },
-//         },
-//       ],
-//     },
-//     //...
-//   },
-// }).buildAllPlatforms();
+async function run() {
+  const $themes = JSON.parse(await promises.readFile('tokens/$themes.json', 'utf-8'));
+  const themes = permutateThemes($themes);
+  const configs = Object.entries(themes).map(([name, tokensets]) => ({
+    source: tokensets.map((tokenset) => `tokens/${tokenset}.json`),
+    preprocessors: ['tokens-studio'],
+    platforms: {
+      css: {
+        transformGroup: 'tokens-studio',
+        transforms: ['name/kebab', 'addTypePrefix', 'addPalettePrefix'],
+        prefix: 'kd',
+        files: [
+          // palette
+          {
+            destination: 'varsPalette.css',
+            format: 'css/variables',
+            filter: (token) => {
+              return token.filePath.startsWith('tokens/Color Palette');
+            },
+          },
+          // themes
+          {
+            destination: `vars${name}.css`,
+            format: 'css/variables',
+            filter: (token) => {
+              return token.filePath.startsWith(`tokens/Themes/${name}`);
+            },
+            options: {
+              outputReferences: true,
+            },
+          },
+        ],
+      },
+      // scss: {
+      //   transformGroup: 'tokens-studio',
+      //   transforms: [
+      //     'name/kebab',
+      //     // 'addTypePrefix',
+      //     // 'addPalettePrefix'
+      //   ],
+      //   // prefix: 'kd',
+      //   files: [
+      //     // palette
+      //     {
+      //       destination: 'varsPalette.scss',
+      //       format: 'scss/map-deep',
+      //       filter: (token) => token.filePath.startsWith('tokens/Color Palette'),
+      //       options: {
+      //         outputReferences: true,
+      //       },
+      //     },
+      //     // themes
+      //     {
+      //       destination: `vars${name}.scss`,
+      //       format: 'scss/map-deep',
+      //       filter: (token) => token.filePath.startsWith(`tokens/Themes/${name}`),
+      //       options: {
+      //         outputReferences: true,
+      //       },
+      //     },
+      //   ],
+      // },
+    },
+    log: {
+      verbosity: 'verbose',
+    },
+  }));
 
-// await sd.cleanAllPlatforms();
-// await sd.buildAllPlatforms();
+  async function cleanAndBuild(cfg) {
+    const sd = new StyleDictionary(cfg);
+    await sd.cleanAllPlatforms();
+    await sd.buildAllPlatforms();
+  }
+
+  await Promise.all(configs.map(cleanAndBuild));
+}
+
+run();
