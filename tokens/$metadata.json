@@ -1,21 +1,8 @@
 {
   "tokenSetOrder": [
-    "Component/Mode 1",
     "Themes/Light",
     "Themes/Dark",
     "Color Palette/Color",
-    "Data Viz/Light Mode",
-    "Breakpoint sizes/Values",
-    "Size Mapping/C - Xlg",
-    "Size Mapping/C - Max",
-    "Size Mapping/C - Lg",
-    "Size Mapping/C- Md",
-    "Size Mapping/C- Sm",
-    "Size Mapping/L - Max",
-    "Size Mapping/L - Xlg",
-    "Size Mapping/L - Lg",
-    "Size Mapping/L - Md",
-    "Size Mapping/L - Sm",
-    "Foundation/Mode 1"
+    "Data Viz/Light Mode"
   ]
 }
