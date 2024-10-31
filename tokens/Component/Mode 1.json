@@ -1,0 +1,32 @@
+{
+  "Card": {
+    "Card Background": {
+      "$type": "color",
+      "$value": "{Background.Ui-Default}"
+    },
+    "Card Border-color Default": {
+      "$type": "color",
+      "$value": "{Border.Light}"
+    },
+    "Card Border-color Clickable": {
+      "$type": "color",
+      "$value": "{Border.Secondary}"
+    },
+    "Card Border-color Hover": {
+      "$type": "color",
+      "$value": "{Border.UI-Hover}"
+    },
+    "Card Padding": {
+      "$type": "number",
+      "$value": "{Spacer.Spacer One}"
+    },
+    "Card Border-width": {
+      "$type": "number",
+      "$value": "{Border.Border M}"
+    },
+    "Card Corner": {
+      "$type": "number",
+      "$value": "{Corner.Corner L}"
+    }
+  }
+}
