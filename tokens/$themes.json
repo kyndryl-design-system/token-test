@@ -5,10 +5,9 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "Themes/Light": "enabled",
-      "Data Viz/Light": "disabled",
-      "Data Viz/Dark": "disabled"
+      "Data Viz/Light": "enabled",
+      "Color Palette/Color": "enabled"
     },
-    "group": "Themes",
     "$figmaCollectionId": "VariableCollectionId:13434:7441",
     "$figmaModeId": "13434:22",
     "$figmaVariableReferences": {
@@ -161,7 +160,8 @@
       "Forms.Input Field Text": "6b55a3f922d335779bc6e88a4572300356da1d6e",
       "Containers.Interactive-flat-container": "6d44b5b482511fce57cb2f4dd24ac88b9a1a478e",
       "Containers.container-footer": "4844d4ca8aab3e2a84bfbb3d008a399cb363502f"
-    }
+    },
+    "group": "Themes"
   },
   {
     "id": "c02c5a8857ad0b20b6cbf9c1c8e1eada26edfe23",
@@ -169,10 +169,9 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "Themes/Dark": "enabled",
-      "Data Viz/Light": "disabled",
-      "Data Viz/Dark": "disabled"
+      "Data Viz/Dark": "enabled",
+      "Color Palette/Color": "enabled"
     },
-    "group": "Themes",
     "$figmaCollectionId": "VariableCollectionId:13434:7441",
     "$figmaModeId": "13434:23",
     "$figmaVariableReferences": {
@@ -325,6 +324,7 @@
       "Forms.Input Field Text": "6b55a3f922d335779bc6e88a4572300356da1d6e",
       "Containers.Interactive-flat-container": "6d44b5b482511fce57cb2f4dd24ac88b9a1a478e",
       "Containers.container-footer": "4844d4ca8aab3e2a84bfbb3d008a399cb363502f"
-    }
+    },
+    "group": "Themes"
   }
 ]
