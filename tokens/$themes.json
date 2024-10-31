@@ -4,7 +4,9 @@
     "name": "Light",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "Themes/Light": "enabled"
+      "Themes/Light": "enabled",
+      "Data Viz/Light": "disabled",
+      "Data Viz/Dark": "disabled"
     },
     "group": "Themes",
     "$figmaCollectionId": "VariableCollectionId:13434:7441",
@@ -166,7 +168,9 @@
     "name": "Dark",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "Themes/Dark": "enabled"
+      "Themes/Dark": "enabled",
+      "Data Viz/Light": "disabled",
+      "Data Viz/Dark": "disabled"
     },
     "group": "Themes",
     "$figmaCollectionId": "VariableCollectionId:13434:7441",
