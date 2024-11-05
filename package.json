@@ -1,7 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "build": "node build-tokens.js"
+    "build": "node build-tokens-custom.js",
+    "build:sd": "node build-tokens-sd.js"
   },
   "devDependencies": {
     "@tokens-studio/sd-transforms": "^1.2.6",
