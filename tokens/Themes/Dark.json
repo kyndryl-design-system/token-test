@@ -69,7 +69,7 @@
       "$value": "{lavender-105}"
     }
   },
-  "Gradients & Shadows": {
+  "Gradients and Shadows": {
     "Interactive Gradient Start": {
       "$type": "color",
       "$value": "{lavender-107}"
@@ -108,7 +108,7 @@
   "Page": {
     "Background": {
       "$type": "color",
-      "$value": "{cool-gray-93}"
+      "$value": "{Cool Gray.cool-gray-93}"
     },
     "page-bg": {
       "$type": "color",
@@ -126,11 +126,11 @@
   "States": {
     "Static": {
       "$type": "color",
-      "$value": "{cool-gray-5}"
+      "$value": "{Cool Gray.5}"
     },
     "Static Solid Label": {
       "$type": "color",
-      "$value": "{cool-gray-5}"
+      "$value": "{Cool Gray.5}"
     },
     "Disabled": {
       "$type": "color",
@@ -142,30 +142,6 @@
     }
   },
   "Table": {
-    "table-header": {
-      "$type": "color",
-      "$value": "{lavender-105}"
-    },
-    "table-row": {
-      "$type": "color",
-      "$value": "{Light-opacity-3}"
-    },
-    "table-alt-row": {
-      "$type": "color",
-      "$value": "{Light-opacity-5}"
-    },
-    "table-row-active": {
-      "$type": "color",
-      "$value": "{lavender-100}"
-    },
-    "table-row-active-nested": {
-      "$type": "color",
-      "$value": "{lavender-90}"
-    },
-    "table-footer": {
-      "$type": "color",
-      "$value": "{lavender-105}"
-    },
     "header": {
       "$type": "color",
       "$value": "{lavender-105}"
@@ -192,30 +168,6 @@
     }
   },
   "Text": {
-    "Copy": {
-      "$type": "color",
-      "$value": "{Light-opacity-86}"
-    },
-    "Text-light": {
-      "$type": "color",
-      "$value": "{Light-opacity-86}"
-    },
-    "Text-medium": {
-      "$type": "color",
-      "$value": "{dark-stone-20}"
-    },
-    "Text-dark": {
-      "$type": "color",
-      "$value": "{cool-gray-90}"
-    },
-    "text-link": {
-      "$type": "color",
-      "$value": "{lavender-40}"
-    },
-    "text-link-active": {
-      "$type": "color",
-      "$value": "{lavender-20}"
-    },
     "Primary": {
       "$type": "color",
       "$value": "{Light-opacity-86}"
@@ -230,7 +182,7 @@
     },
     "dark": {
       "$type": "color",
-      "$value": "{cool-gray-90}"
+      "$value": "{Cool Gray.cool-gray-90}"
     },
     "link": {
       "$type": "color",
@@ -262,7 +214,7 @@
     },
     "icon": {
       "$type": "color",
-      "$value": "{cool-gray-5}"
+      "$value": "{Cool Gray.5}"
     },
     "search-bg": {
       "$type": "color",
@@ -270,15 +222,15 @@
     },
     "interactive-graphic": {
       "$type": "color",
-      "$value": "{cool-gray-80}"
+      "$value": "{Cool Gray.cool-gray-80}"
     },
     "interactive-graphic-alt": {
       "$type": "color",
-      "$value": "{cool-gray-60-neutral-1}"
+      "$value": "{Cool Gray.cool-gray-60-neutral-1}"
     },
     "neutral-tag": {
       "$type": "color",
-      "$value": "{cool-gray-85}"
+      "$value": "{Cool Gray.cool-gray-85}"
     }
   },
   "Forms": {
@@ -296,7 +248,7 @@
     },
     "Input Field Border": {
       "$type": "color",
-      "$value": "{cool-gray-70}"
+      "$value": "{Cool Gray.cool-gray-70}"
     },
     "Input Field Text": {
       "$type": "color",
@@ -319,24 +271,6 @@
     "Card Border-color Hover": {
       "$type": "color",
       "$value": "{Light-opacity-10}"
-    }
-  },
-  "Gradients and Shadows": {
-    "Interactive Gradient Start": {
-      "$type": "color",
-      "$value": "{lavender-107}"
-    },
-    "Interactive Gradient End": {
-      "$type": "color",
-      "$value": "{lavender-100}"
-    },
-    "Container Dropshadow 1": {
-      "$type": "color",
-      "$value": "{Dark-opacity-10}"
-    },
-    "Container Dropshadow 2": {
-      "$type": "color",
-      "$value": "{Dark-opacity-10}"
     }
   },
   "Data Viz": {

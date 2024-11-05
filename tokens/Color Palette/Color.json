@@ -1,111 +1,115 @@
 {
-  "cloud-10-base": {
-    "$type": "color",
-    "$value": "#f2f1ee"
+  "Cloud": {
+    "20": {
+      "$type": "color",
+      "$value": "#dddad3"
+    },
+    "30": {
+      "$type": "color",
+      "$value": "#bdb8a9"
+    },
+    "40": {
+      "$type": "color",
+      "$value": "#a49d89"
+    },
+    "50": {
+      "$type": "color",
+      "$value": "#8a826a"
+    },
+    "60": {
+      "$type": "color",
+      "$value": "#6e6854"
+    },
+    "70": {
+      "$type": "color",
+      "$value": "#534e3f"
+    },
+    "80": {
+      "$type": "color",
+      "$value": "#3c382d"
+    },
+    "90": {
+      "$type": "color",
+      "$value": "#29271f"
+    },
+    "100": {
+      "$type": "color",
+      "$value": "#171511"
+    },
+    "10-base": {
+      "$type": "color",
+      "$value": "#f2f1ee"
+    }
   },
-  "cloud-20": {
-    "$type": "color",
-    "$value": "#dddad3"
-  },
-  "cloud-30": {
-    "$type": "color",
-    "$value": "#bdb8a9"
-  },
-  "cloud-40": {
-    "$type": "color",
-    "$value": "#a49d89"
-  },
-  "cloud-50": {
-    "$type": "color",
-    "$value": "#8a826a"
-  },
-  "cloud-60": {
-    "$type": "color",
-    "$value": "#6e6854"
-  },
-  "cloud-70": {
-    "$type": "color",
-    "$value": "#534e3f"
-  },
-  "cloud-80": {
-    "$type": "color",
-    "$value": "#3c382d"
-  },
-  "cloud-90": {
-    "$type": "color",
-    "$value": "#29271f"
-  },
-  "cloud-100": {
-    "$type": "color",
-    "$value": "#171511"
-  },
-  "cool-gray-3": {
-    "$type": "color",
-    "$value": "#fcfcfc"
-  },
-  "cool-gray-5": {
-    "$type": "color",
-    "$value": "#fafbfb"
-  },
-  "cool-gray-8": {
-    "$type": "color",
-    "$value": "#f5f6f6"
-  },
-  "cool-gray-7": {
-    "$type": "color",
-    "$value": "#f8f9f9"
-  },
-  "cool-gray-10": {
-    "$type": "color",
-    "$value": "#edf1f2"
-  },
-  "cool-gray-15": {
-    "$type": "color",
-    "$value": "#e1e5e7"
-  },
-  "cool-gray-20": {
-    "$type": "color",
-    "$value": "#d5d9db"
-  },
-  "cool-gray-30": {
-    "$type": "color",
-    "$value": "#b6bdc0"
-  },
-  "cool-gray-40": {
-    "$type": "color",
-    "$value": "#97a1a6"
-  },
-  "cool-gray-50": {
-    "$type": "color",
-    "$value": "#79858b"
-  },
-  "cool-gray-60-neutral-1": {
-    "$type": "color",
-    "$value": "#667076"
-  },
-  "cool-gray-70": {
-    "$type": "color",
-    "$value": "#4b5357"
-  },
-  "cool-gray-80": {
-    "$type": "color",
-    "$value": "#383e41"
-  },
-  "cool-gray-85": {
-    "$type": "color",
-    "$value": "#2d3234"
-  },
-  "cool-gray-90": {
-    "$type": "color",
-    "$value": "#222527"
-  },
-  "cool-gray-93": {
-    "$type": "color",
-    "$value": "#1e2123"
-  },
-  "cool-gray-95": {
-    "$type": "color",
-    "$value": "#1a1d1e"
+  "Cool Gray": {
+    "3": {
+      "$type": "color",
+      "$value": "#fcfcfc"
+    },
+    "5": {
+      "$type": "color",
+      "$value": "#fafbfb"
+    },
+    "7": {
+      "$type": "color",
+      "$value": "#f8f9f9"
+    },
+    "8": {
+      "$type": "color",
+      "$value": "#f5f6f6"
+    },
+    "10": {
+      "$type": "color",
+      "$value": "#edf1f2"
+    },
+    "15": {
+      "$type": "color",
+      "$value": "#e1e5e7"
+    },
+    "cool-gray-20": {
+      "$type": "color",
+      "$value": "#d5d9db"
+    },
+    "cool-gray-30": {
+      "$type": "color",
+      "$value": "#b6bdc0"
+    },
+    "cool-gray-40": {
+      "$type": "color",
+      "$value": "#97a1a6"
+    },
+    "cool-gray-50": {
+      "$type": "color",
+      "$value": "#79858b"
+    },
+    "cool-gray-60-neutral-1": {
+      "$type": "color",
+      "$value": "#667076"
+    },
+    "cool-gray-70": {
+      "$type": "color",
+      "$value": "#4b5357"
+    },
+    "cool-gray-80": {
+      "$type": "color",
+      "$value": "#383e41"
+    },
+    "cool-gray-85": {
+      "$type": "color",
+      "$value": "#2d3234"
+    },
+    "cool-gray-90": {
+      "$type": "color",
+      "$value": "#222527"
+    },
+    "cool-gray-93": {
+      "$type": "color",
+      "$value": "#1e2123"
+    },
+    "cool-gray-95": {
+      "$type": "color",
+      "$value": "#1a1d1e"
+    }
   },
   "cool-gray-100": {
     "$type": "color",

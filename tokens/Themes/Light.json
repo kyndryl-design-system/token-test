@@ -32,7 +32,7 @@
     },
     "Button Dark Label": {
       "$type": "color",
-      "$value": "{cool-gray-3}"
+      "$value": "{Cool Gray.3}"
     },
     "Button Light Label": {
       "$type": "color",
@@ -42,11 +42,11 @@
   "Containers": {
     "container-bg": {
       "$type": "color",
-      "$value": "{cool-gray-5}"
+      "$value": "{Cool Gray.5}"
     },
     "container-child-bg": {
       "$type": "color",
-      "$value": "{cool-gray-10}"
+      "$value": "{Cool Gray.10}"
     },
     "interactive-container-active": {
       "$type": "color",
@@ -69,14 +69,14 @@
       "$value": "{lavender-15}"
     }
   },
-  "Gradients & Shadows": {
+  "Gradients and Shadows": {
     "Interactive Gradient Start": {
       "$type": "color",
-      "$value": "{cool-gray-5}"
+      "$value": "{Cool Gray.5}"
     },
     "Interactive Gradient End": {
       "$type": "color",
-      "$value": "{cool-gray-10}"
+      "$value": "{Cool Gray.10}"
     },
     "Container Dropshadow 1": {
       "$type": "color",
@@ -90,15 +90,15 @@
   "Navigation": {
     "nav-bg": {
       "$type": "color",
-      "$value": "{cool-gray-10}"
+      "$value": "{Cool Gray.10}"
     },
     "footer-bg": {
       "$type": "color",
-      "$value": "{cool-gray-10}"
+      "$value": "{Cool Gray.10}"
     },
     "local-nav-bg": {
       "$type": "color",
-      "$value": "{cool-gray-5}"
+      "$value": "{Cool Gray.5}"
     },
     "switcher-icon": {
       "$type": "color",
@@ -108,11 +108,11 @@
   "Page": {
     "Background": {
       "$type": "color",
-      "$value": "{cool-gray-3}"
+      "$value": "{Cool Gray.3}"
     },
     "page-bg": {
       "$type": "color",
-      "$value": "{cool-gray-3}"
+      "$value": "{Cool Gray.3}"
     },
     "logo-bridge-txt": {
       "$type": "color",
@@ -126,7 +126,7 @@
   "States": {
     "Static": {
       "$type": "color",
-      "$value": "{cool-gray-95}"
+      "$value": "{Cool Gray.cool-gray-95}"
     },
     "Static Solid Label": {
       "$type": "color",
@@ -142,41 +142,17 @@
     }
   },
   "Table": {
-    "table-header": {
-      "$type": "color",
-      "$value": "{cool-gray-10}"
-    },
-    "table-row": {
-      "$type": "color",
-      "$value": "{cool-gray-3}"
-    },
-    "table-alt-row": {
-      "$type": "color",
-      "$value": "{cool-gray-7}"
-    },
-    "table-row-active": {
-      "$type": "color",
-      "$value": "{lavender-10}"
-    },
-    "table-row-active-nested": {
-      "$type": "color",
-      "$value": "{cool-gray-3}"
-    },
-    "table-footer": {
-      "$type": "color",
-      "$value": "{cool-gray-10}"
-    },
     "header": {
       "$type": "color",
-      "$value": "{cool-gray-10}"
+      "$value": "{Cool Gray.10}"
     },
     "row": {
       "$type": "color",
-      "$value": "{cool-gray-3}"
+      "$value": "{Cool Gray.3}"
     },
     "alt-row": {
       "$type": "color",
-      "$value": "{cool-gray-7}"
+      "$value": "{Cool Gray.7}"
     },
     "row-active": {
       "$type": "color",
@@ -184,53 +160,29 @@
     },
     "row-active-nested": {
       "$type": "color",
-      "$value": "{cool-gray-3}"
+      "$value": "{Cool Gray.3}"
     },
     "footer": {
       "$type": "color",
-      "$value": "{cool-gray-10}"
+      "$value": "{Cool Gray.10}"
     }
   },
   "Text": {
-    "Copy": {
-      "$type": "color",
-      "$value": "{cool-gray-5}"
-    },
-    "Text-light": {
-      "$type": "color",
-      "$value": "{cool-gray-8}"
-    },
-    "Text-medium": {
-      "$type": "color",
-      "$value": "{cool-gray-85}"
-    },
-    "Text-dark": {
-      "$type": "color",
-      "$value": "{cool-gray-90}"
-    },
-    "text-link": {
-      "$type": "color",
-      "$value": "{lavender-70}"
-    },
-    "text-link-active": {
-      "$type": "color",
-      "$value": "{lavender-50}"
-    },
     "Primary": {
       "$type": "color",
-      "$value": "{cool-gray-5}"
+      "$value": "{Cool Gray.5}"
     },
     "light": {
       "$type": "color",
-      "$value": "{cool-gray-8}"
+      "$value": "{Cool Gray.8}"
     },
     "medium": {
       "$type": "color",
-      "$value": "{cool-gray-85}"
+      "$value": "{Cool Gray.cool-gray-85}"
     },
     "dark": {
       "$type": "color",
-      "$value": "{cool-gray-90}"
+      "$value": "{Cool Gray.cool-gray-90}"
     },
     "link": {
       "$type": "color",
@@ -258,11 +210,11 @@
   "Utility": {
     "border": {
       "$type": "color",
-      "$value": "{cool-gray-15}"
+      "$value": "{Cool Gray.15}"
     },
     "icon": {
       "$type": "color",
-      "$value": "{cool-gray-70}"
+      "$value": "{Cool Gray.cool-gray-70}"
     },
     "search-bg": {
       "$type": "color",
@@ -270,15 +222,15 @@
     },
     "interactive-graphic": {
       "$type": "color",
-      "$value": "{cool-gray-20}"
+      "$value": "{Cool Gray.cool-gray-20}"
     },
     "interactive-graphic-alt": {
       "$type": "color",
-      "$value": "{cool-gray-30}"
+      "$value": "{Cool Gray.cool-gray-30}"
     },
     "neutral-tag": {
       "$type": "color",
-      "$value": "{cool-gray-10}"
+      "$value": "{Cool Gray.10}"
     }
   },
   "Forms": {
@@ -292,7 +244,7 @@
     },
     "Input field Background": {
       "$type": "color",
-      "$value": "{cool-gray-5}"
+      "$value": "{Cool Gray.5}"
     },
     "Input Field Border": {
       "$type": "color",
@@ -306,7 +258,7 @@
   "Card": {
     "Card Background": {
       "$type": "color",
-      "$value": "{cool-gray-3}"
+      "$value": "{Cool Gray.3}"
     },
     "Card Border-color Clickable": {
       "$type": "color",
@@ -314,29 +266,11 @@
     },
     "Card Border-color Default": {
       "$type": "color",
-      "$value": "{cool-gray-5}"
+      "$value": "{Cool Gray.5}"
     },
     "Card Border-color Hover": {
       "$type": "color",
-      "$value": "{cool-gray-7}"
-    }
-  },
-  "Gradients and Shadows": {
-    "Interactive Gradient Start": {
-      "$type": "color",
-      "$value": "{cool-gray-5}"
-    },
-    "Interactive Gradient End": {
-      "$type": "color",
-      "$value": "{cool-gray-10}"
-    },
-    "Container Dropshadow 1": {
-      "$type": "color",
-      "$value": "{Dark-opacity-10}"
-    },
-    "Container Dropshadow 2": {
-      "$type": "color",
-      "$value": "{Dark-opacity-3}"
+      "$value": "{Cool Gray.7}"
     }
   },
   "Data Viz": {
