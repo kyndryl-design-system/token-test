@@ -1,78 +1,87 @@
 import { promises } from 'fs';
 
 async function run() {
-  const prefix = '--kd-color';
+  // fetch token files and convert to json
   const palette = JSON.parse(await promises.readFile('tokens/Color Palette/Color.json', 'utf8'));
   const light = JSON.parse(await promises.readFile('tokens/Themes/Light.json', 'utf8'));
   const dark = JSON.parse(await promises.readFile('tokens/Themes/Dark.json', 'utf8'));
 
+  // build and write css files
   async function buildCss() {
     // build palette variables file
-    let content = ':root {\n';
-    for (const [key, value] of Object.entries(palette)) {
-      if (value.$value) {
-        // loop level 1 (token)
-        const token = cleanKey(key);
-        const attr = `${prefix}-palette-${token}`;
-        const val = value.$value;
-
-        content += `  ${attr}: ${val};\n`;
-      } else {
-        // loop level 1 (category)
-        for (const [key2, value2] of Object.entries(value)) {
-          // loop level 2 (token)
-          const category = cleanKey(key);
-          const token = cleanKey(key2);
-          const attr = `${prefix}-palette-${category}-${token}`;
-          const val = value2.$value;
-
-          content += `  ${attr}: ${val};\n`;
-        }
-      }
-    }
-    content += '}';
-    promises.writeFile('varsPalette.css', content);
+    let paletteContent = ':root {\n';
+    // recurse through json token structure
+    paletteContent += loopTokens(palette, true);
+    paletteContent += '}';
+    // write palette css file
+    promises.writeFile('varsPalette.css', paletteContent);
 
     // build semantic variables file
-    content = ':root {\n';
-    for (const [key, value] of Object.entries(light)) {
-      // loop level 1 (category)
-      for (const [key2, value2] of Object.entries(value)) {
-        if (value2.$value) {
-          // loop level 2 (token)
-          const category = cleanKey(key);
-          const token = cleanKey(key2);
-          const attr = `${prefix}-${category}-${token}`;
-          const valKey = cleanValue(value2.$value);
-          const darkValKey = cleanValue(dark[key][key2].$value);
-          const val = `light-dark(var(${prefix}-palette-${valKey}), var(${prefix}-palette-${darkValKey}))`;
-
-          content += `  ${attr}: ${val};\n`;
-        } else {
-          // loop level 2 (subcategory)
-          for (const [key3, value3] of Object.entries(value2)) {
-            // loop level 3 (token)
-            const category = cleanKey(key);
-            const subCategory = cleanKey(key2);
-            const token = cleanKey(key3);
-            const attr = `${prefix}-${category}-${subCategory}-${token}`;
-            const valKey = cleanValue(value3.$value);
-            const darkValKey = cleanValue(dark[key][key2][key3].$value);
-            const val = `light-dark(var(${prefix}-palette-${valKey}), var(${prefix}-palette-${darkValKey}))`;
-
-            content += `  ${attr}: ${val};\n`;
-          }
-        }
-      }
-    }
-    content += '}';
-    promises.writeFile('varsSemantic.css', content);
+    let semanticContent = ':root {\n';
+    // recurse through json token structure
+    semanticContent += loopTokens(light);
+    semanticContent += '}';
+    // write semantic css file
+    promises.writeFile('varsSemantic.css', semanticContent);
   }
 
+  // recursively loop though json structure to generate css variable syntax
+  function loopTokens(json, palette = false, category = '', keys = []) {
+    const attrPrefix = palette ? '--kd-color-palette' : '--kd-color';
+    const valPrefix = '--kd-color-palette';
+    let content = '';
+
+    for (const [key, value] of Object.entries(json)) {
+      if (value.$value) {
+        // build css variables syntax
+        const token = cleanKey(key);
+        // set variable attribute
+        const attr = `${attrPrefix}${category}-${token}`;
+        // palette token reference
+        const ref = cleanValue(value.$value);
+        let val;
+
+        if (palette) {
+          // set palette variable value, unchanged
+          val = ref;
+        } else {
+          // set semantic variable value using css light-dark() syntax
+          const darkKey = getDarkValue(keys, key);
+          const darkRef = cleanValue(darkKey.$value);
+          val = `light-dark(var(${valPrefix}-${ref}), var(${valPrefix}-${darkRef}))`;
+        }
+
+        // write variable
+        content += `  ${attr}: ${val};\n`;
+      } else {
+        // update category string and parent keys arr
+        let newKeys = JSON.parse(JSON.stringify(keys));
+        newKeys.push(key);
+        let newCategory = category + `-${cleanKey(key)}`;
+
+        // recurse through sub-level and write sub-level variables
+        content += loopTokens(value, palette, newCategory, newKeys);
+      }
+    }
+
+    return content;
+  }
+
+  // get dark value by looping through keys
+  function getDarkValue(keys, curKey) {
+    let darkVal = dark;
+    keys.forEach((key) => {
+      darkVal = darkVal[key];
+    });
+    return darkVal[curKey];
+  }
+
+  // clean json eys for use as css variable attributes
   function cleanKey(key) {
     return key.toLowerCase().split(' ').join('-');
   }
 
+  // clean json values for use as css variable values
   function cleanValue(token) {
     return token
       .toLowerCase()
