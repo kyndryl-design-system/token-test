@@ -160,7 +160,7 @@
     },
     "table-row-active-nested": {
       "$type": "color",
-      "$value": "{Page.Background}"
+      "$value": "{cool-gray-3}"
     },
     "table-footer": {
       "$type": "color",

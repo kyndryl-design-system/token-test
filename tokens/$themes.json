@@ -5,7 +5,6 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "Themes/Light": "enabled",
-      "Data Viz/Light": "enabled",
       "Color Palette/Color": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:13434:7441",
@@ -285,7 +284,6 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "Themes/Dark": "enabled",
-      "Data Viz/Dark": "enabled",
       "Color Palette/Color": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:13434:7441",
