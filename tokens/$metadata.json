@@ -4,6 +4,19 @@
     "Themes/Dark",
     "Color Palette/Color",
     "Data Viz/Light",
-    "Data Viz/Dark"
+    "Data Viz/Dark",
+    "Breakpoint sizes/Values",
+    "Size Mapping/C - Xlg",
+    "Size Mapping/C - Max",
+    "Size Mapping/C - Lg",
+    "Size Mapping/C- Md",
+    "Size Mapping/C- Sm",
+    "Size Mapping/L - Max",
+    "Size Mapping/L - Xlg",
+    "Size Mapping/L - Lg",
+    "Size Mapping/L - Md",
+    "Size Mapping/L - Sm",
+    "Misc/Mode 1",
+    "Component/Mode 1"
   ]
 }
