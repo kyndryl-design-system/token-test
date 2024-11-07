@@ -2,7 +2,7 @@
   "Main Palette": {
     "Primary": {
       "$type": "color",
-      "$value": "{Lavender.70}"
+      "$value": "{Indigo.70}"
     },
     "Secondary": {
       "$type": "color",
@@ -20,15 +20,15 @@
   "Buttons": {
     "Primary": {
       "$type": "color",
-      "$value": "{Lavender.80-primary}"
+      "$value": "{Indigo.80-primary}"
     },
     "Secondary": {
       "$type": "color",
-      "$value": "{Lavender.60}"
+      "$value": "{Indigo.60}"
     },
     "Tertiary": {
       "$type": "color",
-      "$value": "{Lavender.10}"
+      "$value": "{Indigo.10}"
     },
     "Dark Label": {
       "$type": "color",
@@ -50,23 +50,23 @@
     },
     "interactive-container-active": {
       "$type": "color",
-      "$value": "{Lavender.10}"
+      "$value": "{Indigo.10}"
     },
     "interactive-container-inactive": {
       "$type": "color",
-      "$value": "{Lavender.5}"
+      "$value": "{Indigo.5}"
     },
     "utility-container": {
       "$type": "color",
-      "$value": "{Lavender.10}"
+      "$value": "{Indigo.10}"
     },
     "Interactive-flat-container": {
       "$type": "color",
-      "$value": "{Lavender.5}"
+      "$value": "{Indigo.5}"
     },
     "container-footer": {
       "$type": "color",
-      "$value": "{Lavender.15}"
+      "$value": "{Indigo.15}"
     }
   },
   "Gradients and Shadows": {
@@ -102,7 +102,7 @@
     },
     "switcher-icon": {
       "$type": "color",
-      "$value": "{Lavender.80-primary}"
+      "$value": "{Indigo.80-primary}"
     }
   },
   "Page": {
@@ -156,7 +156,7 @@
     },
     "row-active": {
       "$type": "color",
-      "$value": "{Lavender.10}"
+      "$value": "{Indigo.10}"
     },
     "row-active-nested": {
       "$type": "color",
@@ -186,11 +186,11 @@
     },
     "link": {
       "$type": "color",
-      "$value": "{Lavender.70}"
+      "$value": "{Indigo.50}"
     },
     "link-active": {
       "$type": "color",
-      "$value": "{Lavender.50}"
+      "$value": "{Indigo.50}"
     }
   },
   "Titles": {
@@ -218,7 +218,7 @@
     },
     "search-bg": {
       "$type": "color",
-      "$value": "{Lavender.5}"
+      "$value": "{Indigo.5}"
     },
     "interactive-graphic": {
       "$type": "color",
@@ -262,7 +262,7 @@
     },
     "Border-color Clickable": {
       "$type": "color",
-      "$value": "{Lavender.80-primary}"
+      "$value": "{Indigo.80-primary}"
     },
     "Border-color Default": {
       "$type": "color",

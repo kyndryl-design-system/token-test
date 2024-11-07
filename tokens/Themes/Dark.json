@@ -2,7 +2,7 @@
   "Main Palette": {
     "Primary": {
       "$type": "color",
-      "$value": "{Lavender.70}"
+      "$value": "{Indigo.70}"
     },
     "Secondary": {
       "$type": "color",
@@ -20,15 +20,15 @@
   "Buttons": {
     "Primary": {
       "$type": "color",
-      "$value": "{Lavender.80-primary}"
+      "$value": "{Indigo.80-primary}"
     },
     "Secondary": {
       "$type": "color",
-      "$value": "{Lavender.90}"
+      "$value": "{Indigo.90}"
     },
     "Tertiary": {
       "$type": "color",
-      "$value": "{Lavender.105}"
+      "$value": "{Indigo.105}"
     },
     "Dark Label": {
       "$type": "color",
@@ -58,25 +58,25 @@
     },
     "utility-container": {
       "$type": "color",
-      "$value": "{Lavender.105}"
+      "$value": "{Indigo.107}"
     },
     "Interactive-flat-container": {
       "$type": "color",
-      "$value": "{Lavender.107}"
+      "$value": "{Indigo.107}"
     },
     "container-footer": {
       "$type": "color",
-      "$value": "{Lavender.105}"
+      "$value": "{Indigo.105}"
     }
   },
   "Gradients and Shadows": {
     "Interactive Gradient Start": {
       "$type": "color",
-      "$value": "{Lavender.107}"
+      "$value": "{Indigo.107}"
     },
     "Interactive Gradient End": {
       "$type": "color",
-      "$value": "{Lavender.100}"
+      "$value": "{Indigo.100}"
     },
     "Container Dropshadow 1": {
       "$type": "color",
@@ -90,19 +90,19 @@
   "Navigation": {
     "nav-bg": {
       "$type": "color",
-      "$value": "{Lavender.110}"
+      "$value": "{Indigo.110}"
     },
     "footer-bg": {
       "$type": "color",
-      "$value": "{Lavender.110}"
+      "$value": "{Indigo.110}"
     },
     "local-nav-bg": {
       "$type": "color",
-      "$value": "{Lavender.105}"
+      "$value": "{Indigo.105}"
     },
     "switcher-icon": {
       "$type": "color",
-      "$value": "{Lavender.60}"
+      "$value": "{Indigo.60}"
     }
   },
   "Page": {
@@ -112,7 +112,7 @@
     },
     "bg": {
       "$type": "color",
-      "$value": "{Lavender.107}"
+      "$value": "{Indigo.107}"
     },
     "logo-bridge-txt": {
       "$type": "color",
@@ -144,7 +144,7 @@
   "Table": {
     "header": {
       "$type": "color",
-      "$value": "{Lavender.105}"
+      "$value": "{Indigo.105}"
     },
     "row": {
       "$type": "color",
@@ -156,15 +156,15 @@
     },
     "row-active": {
       "$type": "color",
-      "$value": "{Lavender.100}"
+      "$value": "{Indigo.100}"
     },
     "row-active-nested": {
       "$type": "color",
-      "$value": "{Lavender.90}"
+      "$value": "{Indigo.90}"
     },
     "footer": {
       "$type": "color",
-      "$value": "{Lavender.105}"
+      "$value": "{Indigo.105}"
     }
   },
   "Text": {
@@ -186,11 +186,11 @@
     },
     "link": {
       "$type": "color",
-      "$value": "{Lavender.40}"
+      "$value": "{Indigo.40}"
     },
     "link-active": {
       "$type": "color",
-      "$value": "{Lavender.20}"
+      "$value": "{Indigo.20}"
     }
   },
   "Titles": {
@@ -218,7 +218,7 @@
     },
     "search-bg": {
       "$type": "color",
-      "$value": "{Lavender.105}"
+      "$value": "{Indigo.105}"
     },
     "interactive-graphic": {
       "$type": "color",
@@ -262,7 +262,7 @@
     },
     "Border-color Clickable": {
       "$type": "color",
-      "$value": "{Lavender.30}"
+      "$value": "{Indigo.30}"
     },
     "Border-color Default": {
       "$type": "color",
